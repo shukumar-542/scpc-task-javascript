@@ -1,32 +1,23 @@
 function mostFrequentNumber(numbers){
-    for(number of numbers){
-        for(let i=1; i< numbers.length; i++){
-            console.log('num',numbers[i]);
-        }
-    }
-}
-mostFrequentNumber( [3, 5, 2, 5, 3, 3, 1, 4, 5])
-
-
-
-function mostFrequent(arr, n) {
-    let maxcount = 0;
-    let element_having_max_freq;
-    for (let i = 0; i < n; i++) {
+    let maxCount = 0;
+    let maxNumber;
+    for (let i = 0; i < numbers.length; i++) {
         let count = 0;
-        for (let j = 0; j < n; j++) {
-            if (arr[i] == arr[j])
+        for (let j = 0; j < numbers.length; j++) {
+            if (numbers[i] == numbers[j])
                 count++;
-            }
-        if (count > maxcount) {
-            maxcount = count;
-            
-            element_having_max_freq = arr[i];
+        }
+        if (count > maxCount) {
+            maxCount = count;
+            maxNumber = numbers[i];
+
         }
     }
  
-//    console.log(element_having_max_freq)
+    console.log(maxNumber)
+        
+    
 }
-let arr = [40, 50, 30,50 ];
-let n = arr.length;
-mostFrequent(arr, n)
+mostFrequentNumber( [3, 5, 2, 5, 3, 3, 1, 4, 5]);
+
+
